@@ -352,6 +352,9 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 input:required {
   outline: none;
