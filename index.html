@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Untitled RPG</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+  <div id="mainParent">
+    <div id="mainMap">
+      <div id="grid"></div>
+      <div id="lower">
+        <div id="playerInfo">
+          <div id="name">Name: Azel</div>
+          <div id="hp">30/30</div>
+          <div id="atk">5</div>
+          <div id="exp">0</div>
+          <div id="next">20</div>
+          <div id="lvl">1</div>
+          <div id="gold">1</div>
+        </div>
+
+        <div id="controls">
+          <div id="buttonUp">
+            <img class="arrow" src="img/up.png" />
+          </div>
+          <div id="buttonDown">
+            <img class="arrow" src="img/down.png" />
+          </div>
+          <div id="buttonLeft">
+            <img class="arrow" src="img/left.png" />
+          </div>
+          <div id="buttonRight">
+            <img class="arrow" src="img/right.png" />
+          </div>
+          <div id="center">
+            <img class="arrow" src="img/center.png" />
+          </div>
+        </div>
+        <div id="mapPotion"></div>
+        <div id="mapPotionText"></div>
+      </div>
+    </div>
+
+    <div id="priest">
+      <div id="priestImg"><img id="priestPNG" src="./img/priest.png" /></div>
+      <div id="priestLower">
+        <p id="priestText"></p>
+        <button id="priestPower">UnHoly Power 100G</button>
+        <button id="priestHeal">Heal 10G</button>
+      </div>
+      <button id="priestBtn">Continue...</button>
+    </div>
+
+    <div id="battle">
+      <div id="battleBg">
+        <img id="battleIMG" />
+      </div>
+      <div id="battleLower">
+        <div id="battleText">Battle!</div>
+        <div id="battleStats">
+          <div id="battlePlayerStats">
+            <div id="battleName">sdf</div>
+            <div id="battleHp">3</div>
+            <div id="battleAtk">5</div>
+          </div>
+          <div id="battleEnemyStats">
+            <div id="enemyName">enemy</div>
+            <div id="enemyHp">10</div>
+            <div id="enemyAtk">2</div>
+          </div>
+        </div>
+      </div>
+      <div id="battleBtns">
+        <div id="attack">Attack</div>
+        <div id="powerAttack">Power Attack</div>
+        <div id="potion">Use Potion</div>
+      </div>
+    </div>
+
+    <div id="story">
+      <div id="storyBg"><img id="storyPNG" src="./img/entrance.png" /></div>
+      <div id="storyLower">
+        <div id="storyText">
+          Are you prepared? The Dark Lord is through this entrance.
+        </div>
+        <div id="storyContinue">Continue to the fight.</div>
+        <div id="storyLeave">I need to prepare.</div>
+      </div>
+    </div>
+
+    <div id="item">
+      <div id="itemBg"><img id="itemPNG" src="./img/potion.png" /></div>
+      <div id="itemLower">
+        <div id="itemText">
+          You come across an ancient battlefield. You find a potion amongst the
+          rubble.
+        </div>
+        <div id="itemBtn">Leave...</div>
+      </div>
+    </div>
+
+    <div id="gameOver">
+      <div id="gameOverText">
+        <div class="gameOver" id="gameOverTitle">GAME OVER</div>
+        <div class="gameOver" id="gameOverBtn">Try Again?</div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <div id="introTextParent">
+        <div id="introText">
+          After being falsely accused of a crime you have been banished to the
+          under world of the undead for all of eternity. Impossible as it may
+          seem, your only way out is to defeat the Dark Lord...
+        </div>
+        <div id="introBtn">Continue...</div>
+      </div>
+    </div>
+
+    <div id="end">
+      <div id="endTextParent">
+        <div id="endText">
+          The Dark Lord is defeated. With his power you can finally return home.
+          Will you use your newfound power to banish those who wronged you? Or
+          live a quiet life? The choice is yours.
+        </div>
+        <div id="endBtn">The End.</div>
+      </div>
+    </div>
+
+    <div id="title">
+      <div id="titleText">UNDER WORLD</div>
+      <div id="titleLower">
+        <div id="titleInput">
+          Name:
+          <input
+            type="text"
+            id="nameInput"
+            placeholder="Name"
+            minlength="3"
+            maxlength="6"
+            pattern="[a-zA-Z]+"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div id="startGame">Start Game</div>
+        <div id="formValidate"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="/src/index.js" type="module"></script>

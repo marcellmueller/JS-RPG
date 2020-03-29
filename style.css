@@ -1,0 +1,493 @@
+body {
+  margin: 0;
+  background-color: darkred;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  overflow: hidden;
+  user-select: none;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+}
+
+button:hover {
+  color: red;
+}
+/* Main map CSS here */
+/*  */
+#mainParent {
+  margin: 0 auto;
+  background-color: black;
+  padding: 20px;
+  width: 340px;
+  height: 600px;
+}
+
+#mainMap {
+  margin-left: 5px;
+  visibility: hidden;
+  display: inline-block;
+}
+
+#mapPotion {
+  margin-top: 50px;
+  margin-left: 10px;
+  float: left;
+}
+
+#mapPotionText {
+  margin-top: 10px;
+  margin-left: 10px;
+
+  float: left;
+}
+#mapPotion:hover {
+  color: red;
+}
+/* Game over screen CSS here */
+/*  */
+
+#gameOver {
+  visibility: hidden;
+  top: 200px;
+  position: absolute;
+  margin-left: 30px;
+}
+
+#gameOverText {
+  text-align: center;
+}
+#gameOverTitle {
+  font-size: 30px;
+  color: darkred;
+
+  margin-bottom: 30px;
+}
+
+#gameOverBtn:hover {
+  color: red;
+}
+
+/* Priest screen CSS here */
+/*  */
+#priest {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  max-width: 320px;
+  max-height: 640px;
+  margin: auto;
+}
+
+#priestPNG {
+  width: 320px;
+  height: 320px;
+}
+#priestImg {
+  margin-top: 20px;
+  border-style: solid;
+  border-color: white;
+  width: 320px;
+  height: 320px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-color: red;
+  padding: 5px;
+}
+
+#priestLower {
+  max-width: 320px;
+  height: 160px;
+}
+
+#priestBtn {
+  position: absolute;
+  top: 560px;
+}
+
+/* #priestPower {
+  visibility: hidden;
+}
+
+#priestHeal {
+  visibility: hidden;
+} */
+
+/* Battle screen CSS here */
+/*  */
+#battle {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  max-width: 640px;
+  max-height: 640px;
+  margin: auto;
+}
+
+#battleBg {
+  margin-top: 26px;
+  margin-left: 1px;
+  border-style: solid;
+  border-color: white;
+  width: 320px;
+  height: 320px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-color: red;
+  padding: 5px;
+}
+
+#battleLower {
+  display: inline-block;
+  max-width: 320px;
+}
+
+#battleIMG {
+  width: 320px;
+  height: 320px;
+}
+
+#battleText {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+#battleStats {
+  user-select: none;
+  width: 320px;
+  margin-bottom: 10px;
+  padding: 0;
+  border-style: solid;
+  border-bottom: 30px;
+}
+#battlePlayerStats {
+  float: left;
+  padding-top: 5px;
+}
+#battleEnemyStats {
+  float: right;
+  padding-top: 5px;
+}
+
+#battleBtns {
+  position: absolute;
+  top: 480px;
+  font-size: 20px;
+  user-select: none;
+  padding-top: 5px;
+  width: 320px;
+  display: block;
+}
+
+#attack,
+#powerAttack,
+#potion {
+  padding: 10px;
+}
+#attack:hover,
+#powerAttack:hover,
+#potion:hover {
+  color: red;
+}
+/* Story screen CSS here */
+/*  */
+#story {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  max-width: 320px;
+  max-height: 320px;
+  margin: auto;
+}
+
+#storyBg {
+  margin-top: 20px;
+  border-style: solid;
+  border-color: white;
+  width: 320px;
+  height: 320px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-color: red;
+  padding: 5px;
+}
+
+#storyLower {
+  max-width: 320px;
+  margin-top: 20px;
+}
+
+#storyText {
+  margin-bottom: 30px;
+}
+#storyPNG {
+  width: 320px;
+  height: 320px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#storyLeave {
+  margin-top: 30px;
+}
+#storyContinue:hover,
+#storyLeave:hover {
+  color: red;
+}
+
+/* Item screen CSS here */
+/*  */
+#item {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  max-width: 640px;
+  max-height: 640px;
+  margin: auto;
+}
+
+#itemBg {
+  margin-top: 20px;
+  border-style: solid;
+  border-color: white;
+  width: 320px;
+  height: 320px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-color: red;
+  padding: 5px;
+}
+
+#itemLower {
+  max-width: 320px;
+}
+
+#itemPNG {
+  width: 320px;
+  height: 320px;
+}
+
+#itemText {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+#itemBtn {
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+#itemBtn:hover {
+  color: red;
+}
+/* Title screen CSS here */
+/*  */
+#title {
+  position: absolute;
+  top: 100px;
+  max-width: 320px;
+  max-height: 640px;
+  margin: auto;
+}
+
+#titleText {
+  width: 320px;
+  font-size: 70px;
+}
+
+#titleLower {
+  position: absolute;
+  top: 200px;
+}
+
+#titleInput {
+  position: absolute;
+  top: 140px;
+}
+#nameInput {
+  width: 100px;
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+  color: white;
+  border: solid;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  padding: 20px;
+}
+
+#formValidate {
+  width: 200px;
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 20px;
+}
+#startGame:hover {
+  color: red;
+}
+#startGame {
+  position: absolute;
+  top: 260px;
+  left: 100px;
+  font-size: 26px;
+  user-select: none;
+}
+
+input:required {
+  box-shadow: none;
+}
+input:invalid {
+  box-shadow: none;
+}
+
+/* Intro screen CSS here */
+/*  */
+
+#intro {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  max-width: 320px;
+  max-height: 640px;
+  font-size: 20px;
+  margin: auto;
+  line-height: 30px;
+}
+
+#introBtn {
+  position: absolute;
+  top: 540px;
+  left: 20px;
+  font-size: 20px;
+  user-select: none;
+}
+
+#introBtn:hover {
+  color: red;
+}
+
+/* End screen CSS here */
+/*  */
+
+#end {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  max-width: 320px;
+  max-height: 640px;
+  font-size: 20px;
+  margin: auto;
+}
+
+#endBtn {
+  position: absolute;
+  top: 460px;
+  left: 20px;
+  font-size: 26px;
+  user-select: none;
+}
+
+#endBtn:hover {
+  color: red;
+}
+.arrow {
+  width: 48px;
+  height: 48px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+#grid {
+  width: 320px;
+  height: 320px;
+  display: grid;
+  grid-gap: 1px;
+
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.gridSquares {
+  border-color: white;
+  border-style: solid;
+
+  padding: 5px;
+}
+
+#playerInfo {
+  float: left;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+/* Player control arrows CSS */
+/*  */
+#controls {
+  padding-top: 20px;
+  float: right;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  width: 144px;
+  height: 144px;
+}
+
+#buttonUp {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#buttonDown {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#buttonLeft {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#buttonRight {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#center {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#buttonUp:hover,
+#buttonDown:hover,
+#buttonLeft:hover,
+#buttonRight:hover {
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+    saturate(600%) contrast(0.8);
+}
+
+/* End player controls CSS */
+/*  */
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
