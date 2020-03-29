@@ -9,7 +9,7 @@ let player = {
   maxHp: 40,
   hp: 40,
   atk: 7,
-  exp: 19,
+  exp: 0,
   next: 20,
   lvl: 1,
   gold: 10,
